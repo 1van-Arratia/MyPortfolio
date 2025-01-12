@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +7,6 @@
     font-family: sans-serif;
 }
 
-body{
-    padding: 5%;
-}
 
 .content {
     margin-top: 2rem;
@@ -42,11 +40,46 @@ h1{
 }
 
 header{
-    text-align: right;
+    display: flex;
     background-color: beige;
 }
+
 
 .nav {
     background-color: black;
 }
 
+#navbar {
+
+    padding-top: 5px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 6px;
+
+   
+}
+
+@media(width < 501px ){
+    #header{
+        flex-direction: column;
+        padding: 0;
+
+        #logo{
+
+            #Title{
+               text-align: center; 
+            }
+        }
+    }
+
+    #navbar {
+      .nav {
+        display: flex;
+        
+        justify-content: center;
+      }
+    }
+}
