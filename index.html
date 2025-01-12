@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IA Website</title>
+    <style type = "text/css">
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #header {
+            float: right;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        .nav li a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .nav li a:hover {
+            background-color: #434343;
+        }
+
+        .nav > li {
+            float: left;
+        }
+
+        .nav li ul {
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+
+        .nav li:hover > ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+
+
+    </style>
+
+    <link rel = "stylesheet" href = "./styles.css">
+    <script src = "./script.js" defer></script>
+
+</head>
+<body background="Img/backgroundIApage.jpg">
+
+    <header>
+        <h1 id="Title">IA Website</h1>
+    </header>
+
+    <div id = "header">
+        <ul class = "nav">
+            <li><a data-target="#welcome">Home</a></li>
+
+            <li><a data-target="#structural_designer">About</a>
+                <ul>
+                    <li><a data-target="#structural_designer">Structural Designer</a></li>
+                    <li><a data-target="#programmer">Programmer</a></li>
+                    <li><a data-target="#physicist_and_mathematician">Physicist and Mathematician</a></li>
+                    <li><a data-target="#polyglot">Polyglot</a></li>
+                </ul>
+            </li>
+
+            <li><a data-target="#designer_personal_tutor">Services</a>
+                <ul>
+                    <li><a data-target="#designer_personal_tutor">Designer & Personal Tutor</a></li>
+                </ul>
+            </li>
+
+            <li><a data-target="#contact_information">Contact</a></li>
+
+        </ul>
+    </div>
+    
+
+    <section>
+        
+        <hr  
+        style="
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        ">
+        <article class="Post">
+            <div data-content id = "welcome" class = "active">
+                <h1>Welcome</h1>
+                <p>It's a pleasure to meet you.</p>
+                <p>My name is Iván Arratia and I’m a Civil Engineer with a specialty in structural calculation and design.</p>
+                <p>I developed this website myself from scratch so that I can be available whenever you need it. If there is anything I can help you with, do not hesitate to contact me.</p>
+                <img src="Img/welcome to my website.PNG" width="400" class = "imgCenter"/>
+                <hr>
+            </div>
+        </article>
+
+        <article class="Post">
+            <div data-content id = "structural_designer">
+                <h1>Structural Designer</h1>
+                <p>Expert in structural designs of various kinds such as:</p>
+                <p><img src="Img/vivienda en serie.PNG" width="250" height="150" />
+                    *Series Housing<br />
+                    <img src="Img/residencial.PNG" width="250" height="150" />
+                    *Residential Housing<br />
+                    <img src="Img/subestacion electrica.PNG" width="250" height="150" />
+                    *Electrical Substations<br />
+                    <img src="Img/edificios.PNG" width="250" height="150" />
+                    *Buildings<br />
+                    <img src="Img/nave industrial.PNG" width="250" height="150" />
+                    *Industrial Warehouses<br />
+                    <img src="Img/conexiones de acero.jpg" width="250" height="150" />
+                    *Steel Connections<br />
+                    <img src="Img/tanques de almacenamiento.PNG" width="250" height="150" />
+                    *Storage Tanks<br />
+                    <img src="Img/monumentos.PNG" width="250" height="150" />
+                    *Monuments<br />
+                    <img src="Img/cim especiales.PNG" width="250" height="150" />
+                    *Special Foundations<br />
+                    </p>
+                <p>Using specialized software with cutting-edge technology, current regulations and standards and constantly updated in both nationally and internationally.</p>
+                <p>Softwares</p>
+                <p><img src="Img/Robot logo.PNG" width="200" height="50" />
+                    *Robot Structural<br />
+                    <img src="Img/Revit logo.PNG" width="200" height="50" />
+                    *Revit<br />
+                    <img src="Img/idea statica logo.PNG" width="200" height="50" />
+                    *IDEA StatiCa<br />
+                    <img src="Img/AutoCAD logo.PNG" width="200" height="50" />
+                    *AutoCAD<br />
+                    <img src="Img/cypecad logo.PNG" width="200" height="50" />
+                    *Cypecad<br />
+                    <img src="Img/staad pro logo.PNG" width="200" height="50" />
+                    *Staad Pro<br />
+                    <img src="Img/sap 2000 logo.PNG" width="200" height="50" />
+                    *SAP 2000<br />
+                    <img src="Img/Etabs logo.PNG" width="200" height="50" />
+                    *Etabs<br />
+                    <img src="Img/CivilCAD logo.PNG" width="200" height="50" />
+                    *CivilCAD<br />
+                    <img src="Img/RAM connection logo.PNG" width="200" height="50" />
+                    *RAM Connection<br />
+                    <img src="Img/MathCAD logo.PNG" width="200" height="50" />
+                    *Mathcad<br />
+                    <img src="Img/Adapt builder logo.PNG" width="200" height="50" />
+                    *Adapt-Builder<br />
+                    <img src="Img/MS office logo.PNG" width="200" height="50" />
+                    *MS Office<br />
+                    <img src="Img/MS project logo.PNG" width="200" height="50" />
+                    *MS Project<br />
+                    <img src="Img/Opus logo.PNG" width="200" height="50" />
+                    *Opus<br />
+                    <img src="Img/Neodata logo.PNG" width="200" height="50" />
+                    *Neodata<br />
+                    <img src="Img/nitro pro logo.PNG" width="200" height="50" />
+                    *Nitro Pro<br />
+                    </p>
+                <p>Structural design regulations and codes:</p>
+                <p><img src="Img/ACI logo.PNG" width="200" height="50" />
+                    *ACI 318 American Concrete Institute<br />
+                    <img src="Img/AISC logo.PNG" width="200" height="50" />
+                    *AISC American Institute of Steel Construction<br />
+                    <img src="Img/ASCE 7 logo.PNG" width="200" height="50" />
+                    *ASCE 7 Minimum Design Loads and Associated Criteria for Buildings and Other Structures<br />
+                    <img src="Img/NTC logo.PNG" width="200" height="50" />
+                    *NTC RCDF Normas Técnicas Complementarias del Reglamento de Construcciones para el Distrito Federal<br />
+                    <img src="Img/CFE logo.PNG" width="200" height="50" />
+                    *CFE Comisión Federal de Electricidad Manual de Diseño de obras civiles<br />
+                    <img src="Img/AASHTO logo.PNG" width="200" height="50" />
+                    *AASHTO American Association of State Highway and Transportation Officials<br />
+                    <img src="Img/IMCA logo.PNG" width="200" height="50" />
+                    *IMCA Instituto Mexicano de la Construcción en Acero<br />
+                    <img src="Img/manual del maestro de obra.PNG" width="200" height="50" />
+                    *Manual del Maestro de Obra<br />
+                    </p>
+                <p>Specialization and emphasis on</p>
+                <p>Finite element modeling</p>
+                <img src="Img/FEM modeling.PNG" width="400" height="200" />
+                <p>Shells for structural design with their respective discretization and interpretation of results.</p>
+                <p>Soil-Structure Interaction</p>
+                <img src="Img/soil structura interaction.png" width="200" height="350" />
+                <p>Calculation and review of springs to incorporate them into mathematical models and verify the behavior of structures.</p>
+                <p>Wind Design</p>
+                <img src="Img/wind loads.PNG" width="400" height="200" />
+                <p>Review of the effects created from the wind pressures generated in the region with current codes.</p>
+                <p>Earthquake Design</p>
+                <img src="Img/sismic spectra.png" width="400" height="200" />
+                <p>Calculation of seismic design spectra as well as their incorporation into the analysis for the development of earthquake-resistant structures.</p>
+                <p>Engineering Complements</p>
+                <p>3D Drawing and Modeling</p>
+                <img src="Img/drawing modeling.PNG" width="400" height="200" />
+                <p>Development of 3D plans and models as well as monitoring of BIM methodologies using AutoCAD and Revit tools.</p>
+                <p>Construction and Cost Control</p>
+                <img src="Img/costos y presupuestos.PNG" width="400" height="200" />
+                <p>Generation of Gantt diagrams using MS Project as well as cost analysis and unit prices with Opus and Neodata tools.</p>
+                <hr>
+            </div>
+        </article>
+
+        <article class="Post">
+            <div data-content id = "programmer">
+                <h1>Programmer</h1>
+                <p>Self-taught Full Stack Developer for both web development and desktop applications, servers and cyber security.</p>
+                <p>Generation of code through Visual Studio Code, NetBeans and Artificial Intelligence with the following programming languages:</p>
+                <p><img src="Img/phyton.PNG" width="200" height="100"/>
+                    *Phyton<br />
+                    <img src="Img/visual basic.PNG" width="200" height="100"/>
+                    *Visual Basic<br />
+                    <img src="Img/lenguaje c.PNG" width="200" height="100"/>
+                    *C<br />
+                    <img src="Img/java.PNG" width="200" height="100"/>
+                    *Java<br />
+                    <img src="Img/html.PNG" width="200" height="100"/>
+                    *HTML<br />
+                    <img src="Img/css.PNG" width="200" height="100"/>
+                    *CSS<br />
+                    <img src="Img/javascript.PNG" width="200" height="100"/>
+                    *Javascript<br />
+                    <img src="Img/gnu linux.jpg" width="200" height="100"/>
+                    *GNU - Linux<br />
+                </p>
+                <p>Used for content creation, tools for applied engineering in the field of construction, function optimization, maintenance, networks and network protection.</p>
+                <hr>
+            </div>
+        </article>
+
+        <article class="Post">
+            <div data-content id = "physicist_and_mathematician">
+                <h1>Physicist and Mathematician</h1>
+                <p>Extensive knowledge in the theoretical branches of physics and mathematics used to describe the world around us, the behavior of bodies and their interaction, and mathematical tools to solve the problems that arise in our reality.</p>
+                <p>Examples of the branches of knowledge and tools mastered:</p>
+                <p><img src="Img/Estatica.png" width="250" height="150" />
+                    *Statics<br />
+                    <img src="Img/dinamica.PNG" width="250" height="150" />
+                    *Dynamics<br />
+                    <img src="Img/diferencial.PNG" width="250" height="150" />
+                    *Differential Calculus<br />
+                    <img src="Img/integral.PNG" width="250" height="150" />
+                    *Integral Calculus<br />
+                    <img src="Img/matricial.PNG" width="250" height="150" />
+                    *Matrix Calculus<br />
+                    <img src="Img/ecs diferenciales.PNG" width="250" height="150" />
+                    *Differential Equations<br />
+                    <img src="Img/varias variables.PNG" width="250" height="150" />
+                    *Calculus of Several Variables<br />
+                    <img src="Img/analisis vectorial.PNG" width="250" height="150" />
+                    *Vector Analysis<br />
+                    <img src="Img/fuerzas en el espacio.jpg" width="250" height="150" />
+                    *Forces in Space<br />
+                </p>
+                <hr>
+            </div>
+        </article>
+
+        <article class="Post">
+            <div data-content id = "polyglot">
+                <h1>Polyglot</h1>
+                <p>Mastery and ease in handling various languages in real time as a translator or interpreter.</p>
+                <p>Mother Tongue</p>
+                <p>Latin American Spanish (Mexico)</p>
+                <img src="Img/idioma español.png" width="400" height="200" class = "imgCenter"/>
+                <p>English</p>
+                <p>Advanced Professional Level C1</p>
+                <img src="Img/idioma inglés.jpg" width="400" height="200" class = "imgCenter"/>
+                <p>Japanese</p>
+                <p>Japanese Language Proficiency Test N4</p>
+                <img src="Img/idioma japonés.PNG" width="400" height="200" class = "imgCenter"/>
+                <hr>
+            </div>
+        </article>
+
+        <article class="Post">
+            <div data-content id = "designer_personal_tutor">
+                <h1>Designer & Personal Tutor</h1>
+                <p>As an active structural designer, certified worker with long and sturdy carrier and experience in professional practice, I offer my private services to perform any structural design you may need, so if you have any construction project that requires a high-quality analysis to ensure that it will not have any kind of problem after its construction, you can count on my help.</p>
+                <img src="Img/independent projects.PNG" width="400" height="200" class = "imgCenter"/>
+                <p>For me it is a pleasure to share the knowledge I have and help other people to achieve the goals they have set for themselves and fulfill their professional and personal objectives. To do this, I offer my private teaching and consulting services at affordable costs according to the requirements of the people on any of the topics that are within my knowledge while I accompany you in the wonderful process of learning and improvement.</p>
+                <img src="Img/asesorias.PNG" width="400" height="200" class = "imgCenter"/>
+                <p>Engineering and teaching are probably not the only two things I could do for you, programming and translation are also two of my strong points, like many others. Don't hesitate to contact me and ask if you need any help. I will most likely be able to help you or tell you who will.</p>
+                <img src="Img/tratos cerrados.PNG" width="400" height="200" class = "imgCenter"/>
+                <hr>
+            </div>
+        </article>
+
+        <article class="Post">
+            <div data-content id = "contact_information">
+                <h1>Contact Information</h1>
+                <p>Cel: 8129206501</p>
+                <p>Email: ivan_arratia@hotmail.com</p>
+                <img src="Img/contact me.png" width="400" class = "imgCenter"/>
+                <hr>
+            </div>
+        </article>
+
+    </section>
+
+
+    <footer>
+        <a href="#Title">Go to the Beginning</a>
+        <a href="mailto:ivan_arratia@hotmail.com">Mail Contact</a>
+        <p>Copyright 2025</p>
+    </footer>
+
+
+</body>
+</html>

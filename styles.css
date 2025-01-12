@@ -1,0 +1,52 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 5%;
+}
+
+.content {
+    margin-top: 2rem;
+}
+
+
+[data-content]{
+    display: none;
+}
+
+.active[data-content]{
+    display: block;
+}
+
+p {
+    padding: 10px;
+}
+
+img {
+    padding: 5px;
+}
+
+.imgCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    padding: 10px;
+}
+
+header{
+    text-align: right;
+    background-color: beige;
+}
+
+.nav {
+    background-color: black;
+}
+
